@@ -5,7 +5,7 @@ import sys
 from runner import Runner
 
 
-class Day6Runner(Runner):
+class DayRunner(Runner):
     def run1(self):
         lazers = set()
         first_line = self.lines.pop(0)
@@ -42,5 +42,5 @@ if __name__ == '__main__':
     else:
         input_path = Path(__file__).parent / 'input.txt'
 
-    print(Day6Runner(input_path).run1())
-    print(Day6Runner(input_path).run2())
+    print(DayRunner(input_path).run1())
+    print(DayRunner(input_path).run2())
