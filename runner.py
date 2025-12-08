@@ -2,7 +2,8 @@ from pathlib import Path
 
 
 class Runner:
-    def __init__(self, input_path: Path):
+    def __init__(self, input_path: Path, test: bool = False):
+        self.test = test
         self.lines = input_path.read_text().splitlines()
 
     def run1(self):
