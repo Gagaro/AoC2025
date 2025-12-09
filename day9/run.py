@@ -35,8 +35,9 @@ class DayRunner(Runner):
                     ((tile.x, tile.y), (tile.x, second_tile.y),
                      (second_tile.x, second_tile.y), (second_tile.x, tile.y))
                 )
-                if polygon.covers(square):
-                    max_area = max(max_area, tile.area(second_tile))
+                area = tile.area(second_tile)
+                if area > max_area and polygon.covers(square):
+                    max_area = area
         return max_area
 
 
