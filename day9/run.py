@@ -48,4 +48,4 @@ if __name__ == '__main__':
         input_path = Path(__file__).parent / 'input.txt'
 
     print(DayRunner(input_path, test=is_test).run1())
-    print(DayRunner(input_path, test=is_test == 'test').run2())
+    print(DayRunner(input_path, test=is_test).run2())
